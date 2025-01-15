@@ -75,7 +75,7 @@ aside li a {
 
 nav li a:hover,
 aside li a:hover {
-    color: rgb(255, 255, 255);
+    color: #000000;
 }
 
 footer {
