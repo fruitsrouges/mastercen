@@ -14,34 +14,34 @@
         <div class="titre">
             <h1>Contactez-nous</h1>
         </div>
-        <form action="form.php" method="post">
+        <form name="contactform" action="form.php" method="post">
             <fieldset class="champs">
                 <legend>Vos coordonnées</legend>
                 <div class="form-group">
                     <label for="nom">Nom * :</label>
-                    <input type="text" id="nom" placeholder="nom">
+                    <input type="text" name="nom" placeholder="nom" required>
                 </div>
                 <div class="form-group">
                     <label for="prenom">Prénom * :</label>
-                    <input type="text" id="prenom" placeholder="prénom">
+                    <input type="text" name="prenom" placeholder="prénom" required>
                 </div>
                 <div class="form-group">
                     <label for="telephone">Téléphone * :</label>
-                    <input type="tel" id="telephone" placeholder="votre téléphone">
+                    <input type="tel" name="telephone" placeholder="votre téléphone" required>
                 </div>
                 <div class="form-group">
                     <label for="email">Email * :</label>
-                    <input type="email" id="email" placeholder="email">
+                    <input type="email" name="email" placeholder="email" required>
                 </div>
                 <div class="form-group">
                     <label for="objet">Objet * :</label>
-                    <input type="text" id="objet" placeholder="objet">
+                    <input type="text" name="objet" placeholder="objet" required>
                 </div>
             </fieldset>
 
             <fieldset class="champs">
                 <legend>Votre message</legend>
-                <textarea id="texte" name="texte"></textarea>
+                <textarea name="texte" name="texte"></textarea>
             </fieldset>
 
             <div class="texte">
