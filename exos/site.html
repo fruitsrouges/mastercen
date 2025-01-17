@@ -4,15 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site</title>
+    <title>Entreprise</title>
     <link rel="stylesheet" href="css/site.css">
 </head>
 
 <body>
     <header>
         <div class="bande-content">
-            <h3>Logo</h3>
+            <div class="logo">
+                <h3>Logo</h3>
+            </div>
+            <div class="burger" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
             <div class="navigation">
+                <span class="close-btn" onclick="toggleMenu()">&times;</span>
                 <ul>
                     <li><a href=#>Accueil</a></li>
                     <li><a href=#>À propos</a></li>
@@ -20,25 +28,30 @@
                     <li><a href=#>Contact</a></li>
                 </ul>
             </div>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
         </div>
     </header>
-    <main>
-        <section class="main-content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi molestie justo dui, eu euismod mi
-                molestie sed.</p>
-            <img src="content/600-400.png">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi molestie justo dui, eu euismod mi
-                molestie sed.</p>
-            <img src="content/600-200.png">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi molestie justo dui, eu euismod mi
-                molestie sed.</p>
-        </section>
+    <main class="main-content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi molestie justo dui, eu euismod mi
+            molestie sed.</p>
+        <img src="content/600-400.png">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi molestie justo dui, eu euismod mi
+            molestie sed.</p>
+        <img src="content/600-200.png">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi molestie justo dui, eu euismod mi
+            molestie sed.</p>
     </main>
+    <footer>
+        <p>Copyright Entreprise</p>
+    </footer>
+
+    <script>
+
+        function toggleMenu() {
+            const navigation = document.querySelector('.navigation');
+            navigation.classList.toggle('show');
+        }
+
+    </script>
 </body>
 
 </html>
